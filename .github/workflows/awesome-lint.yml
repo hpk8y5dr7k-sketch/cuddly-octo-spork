@@ -1,0 +1,17 @@
+name: Lint new entry
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'README.md'
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+      - name: awesome-lint new entry
+        run: ./.github/scripts/lint-new-entry.sh
