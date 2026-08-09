@@ -11,6 +11,10 @@
     "bob-ibm": {
       "type": "http",
       "url": "https://bob.ibm.com/mcp"
+    },
+    "x-mcp": {
+      "type": "http",
+      "url": "https://x.com/mcp"
     }
   }
 }
